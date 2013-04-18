@@ -1,0 +1,138 @@
+/* ==========================================================================
+ * 
+ * Custom User Styles
+ * 
+ * ========================================================================== */
+ 
+ 
+ /* ==========================================================================
+ * Typography
+ * ========================================================================== */
+ 
+ /* Titles */
+ @font-face {
+    font-family: 'AmaranthRegular';
+    src: url('../fonts/Amaranth-webfont.eot');
+    src: url('../fonts/Amaranth-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Amaranth-webfont.woff') format('woff'),
+         url('../fonts/Amaranth-webfont.ttf') format('truetype'),
+         url('../fonts/Amaranth-webfont.svg#AmaranthRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Bold titles */
+@font-face {
+    font-family: 'AmaranthBold';
+    src: url('../fonts/Amaranth-Bold-webfont.eot');
+    src: url('../fonts/Amaranth-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Amaranth-Bold-webfont.woff') format('woff'),
+         url('../fonts/Amaranth-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Amaranth-Bold-webfont.svg#AmaranthBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ /* Common text */
+ @font-face {
+    font-family: 'satelliteregular';
+    src: url('../fonts/satellite-webfont.eot');
+    src: url('../fonts/satellite-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/satellite-webfont.woff') format('woff'),
+         url('../fonts/satellite-webfont.ttf') format('truetype'),
+         url('../fonts/satellite-webfont.svg#satelliteregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ /*Main*/
+ 
+html{
+    font-family:'satelliteregular';
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.marker{
+    width: 45px;
+    height: 76px;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: url('../img/header.png') no-repeat 0 0 transparent;
+}
+
+/* Header */
+
+header{
+    background: rgba(201,40,45,1); /* fallback */
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
+    padding: 10px 15px;
+    margin-bottom: 50px;
+    h1{
+        color: #000000;
+        font-family: 'AmaranthRegular';
+        font-size: 1.5em;
+        margin: 0;
+    }
+    .back{
+        background: url('../img/back.png') no-repeat left center transparent;
+        width: 20;
+        padding: 0 15px;
+        height: 33px;
+        border-right: 1px solid #111;
+        display: inline-block;
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+.header-home{
+    background: rgba(201,40,45,1);
+}
+.header-search{
+     background: rgba(90,132,34,1);
+}
+
+/* Main nav */
+
+.home{
+    nav{
+        width: 66%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                border-bottom: 1px solid #666;
+                a{
+                    font-family: 'satelliteregular';
+                    font-size: 1.4em;
+                    color: #666666;
+                    text-decoration: none;
+                    padding: 10px 0;
+                    display: block;
+                    &:hover{
+                        color: darken(#666, 30%);
+                    }
+                }
+            }
+        }
+    }
+    .btn{
+        width: 66%;
+        margin: 0 auto;
+        font-family: 'AmaranthRegular';
+        font-size: 1.4em;
+        color: #FFF;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 0;
+        display: block;
+        background: #000;
+    }
+}
