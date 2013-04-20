@@ -25,30 +25,42 @@
         
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body id="search-main">
         <header id="header" class="header header-search">
             <a class="back" href="index.html"><!-- index --></a>
             <h1>Dictme</h1>
         </header>
-        
         <div class="marker"><!-- marker image --></div>
-    <section class="content home">
-    
-        <nav>
-            <ul class="nav">
-                <li>
-                    <a href="search.html">Buscar</a>
-                </li>
-                <li>
-                    <a href="play.html">Jugar</a>
-                </li>
-                <li>
-                    <a href="dictionary.html">Cargar diccionario</a>
-                </li>
-            </ul>
-        </nav>
         
-        <a href="add_word.html" class="btn">Nueva palabra</a>
+    <section>
+        <div class="content search">
+            <form class="search-form" name="input" action="" method="get">
+                <input type="text" name="search" class="searchbox" placeholder="Buscar">
+                <a href="#" class="search_btn">Search</a>
+            </form>
+        </div>
+        <hr class="search-divider" />
+        <div class="content search">
+            <ul class="search-results">
+                <li class="clearfix">
+                    <a href="#" title="Palabras">Palabra</a>
+                    <span>></span>
+                    <a href="#" title="Palabras">Word</a>
+                </li>
+                <li class="clearfix">
+                    <a href="#" title="Palabras">Palabra</a>
+                    <span>></span>
+                    <a href="#" title="Palabras">Word</a>
+                </li>
+                <li class="clearfix">
+                    <a href="#" title="Palabras">Palabra</a>
+                    <span>></span>
+                    <a href="#" title="Palabras">Word</a>
+                </li>
+
+            </ul>
+        </div>
+        
     </section>    
         <!-- SCRIPTS not needed so far -->
         <script src="js/vendor/zepto.min.js"></script>
