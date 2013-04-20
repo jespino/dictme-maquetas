@@ -25,43 +25,33 @@
         
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
-        <header id="header" class="header header-search">
+    <body id="play-main">
+        <header id="header" class="header header-play">
             <a class="back" href="index.html"><!-- index --></a>
             <h1>Dictme</h1>
         </header>
         <div class="marker"><!-- marker image --></div>
         
-    <section>
-        <div class="content search">
-            <form class="search-form" name="input" action="" method="get">
-                <input type="text" name="search" class="searchbox" placeholder="Buscar">
-                <a href="#" class="search_btn">Search</a>
-            </form>
-        </div>
-        <hr class="search-divider" />
-        <div class="content search">
-            <ul class="search-results">
-                <li class="clearfix">
-                    <a href="#" title="Palabras">Palabra</a>
-                    <span>></span>
-                    <a href="#" title="Palabras">Word</a>
+    <section class="content play">
+        <p class="translate">Traduce: <span class="translate-word">Ornitorrinco</span></p>
+        <form class="play-form" name="input" action="" method="get">
+            <input type="text" name="play" class="playbox" placeholder="tu respuesta">
+            <a href="#" class="btn">¡Comprobar!</a>
+        </form>
+    </section>
+    <section class="content play">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" title="Ver la respuesta" class="right-answer">Ver la respuesta</a>
                 </li>
-                <li class="clearfix">
-                    <a href="#" title="Palabras">Palabra</a>
-                    <span>></span>
-                    <a href="#" title="Palabras">Word</a>
+                <li>
+                    <a href="#" title="Siguiente respuesta" class="next-answer">Siguiente respuesta</a>
                 </li>
-                <li class="clearfix">
-                    <a href="#" title="Palabras">Palabra</a>
-                    <span>></span>
-                    <a href="#" title="Palabras">Word</a>
-                </li>
-
             </ul>
-        </div>
-        
-    </section>    
+        </nav>
+    </section>
+    
         <!-- SCRIPTS not needed so far -->
         <script src="js/vendor/zepto.min.js"></script>
         <script src="js/helper.js"></script>
